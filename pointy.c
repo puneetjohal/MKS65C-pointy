@@ -18,12 +18,11 @@ int main(){
     printf("Decimal: %d \n", *c);
   }
   //increment each byte by 16
-  unsigned int * p = &num;
   for (i = 0; i < 4; i++){
-    (*(p+i))+=16;
+    (*(c+i))+=16;
     printf("Adding 16 to byte %d... \n", i+1);
-    printf("Hex: %x \n", *p);
-    printf("Decimal: %d \n", *p);
+    printf("Hex: %x \n", *c);
+    printf("Decimal: %d \n", *c);
   }
   return 0;
 }
