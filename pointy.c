@@ -8,7 +8,7 @@ int main(){
   //print each individual byte of the int
   int i;
   for (i = 0; i < 4; i++){
-    printf("Byte %d: %hhx \n", i+1, *(c+i) );
+    printf("Byte %d: %hhx (%d)\n", i+1, *(c+i), *(c+i) );
   }
   //increment each byte by 1
   for (i = 0; i < 4; i++){
@@ -21,7 +21,7 @@ int main(){
   unsigned int * p = &num;
   for (i = 0; i < 4; i++){
     (*(p+i))+=16;
-    printf("Adding 1 to byte %d... \n", i+1);
+    printf("Adding 16 to byte %d... \n", i+1);
     printf("Hex: %x \n", *p);
     printf("Decimal: %d \n", *p);
   }
